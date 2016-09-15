@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Star Trek - Comments & Suggestions Page</title>
+		<link rel="stylesheet" type="text/css" href="StyleSheet.css" media="all" />
+	</head>
+
+<body>
+		<h1>Welcome to the Comments and Suggestions Page!</h1>
+		<h2>Please filling the information and comment or suggestion in the box</h2>
+		<form method="Post" action="process.aspx">
+
+			<fieldset>
+			<label for="uName">User Name:</label><br/>
+			<input type="text" id="uname" name="uname"/><br/>
+			</fieldset>
+
+			<fieldset>
+			<label for="gender">Gender:</label><br/>
+			<input type="radio" name="gender" value="Male">Male</input><br/>
+			<input type="radio" name="gender" value="Female">Female</input><br/>
+			</fieldset>
+
+			<fieldset>
+				<label for="add2">City:</label><br/>
+				<input type="text" id="city" name="city"/><br/>
+			</fieldset>
+
+			<fieldset>
+				<label for="add2">Comment or Suggestion:</label><br/>
+				<input type="text" id="comment" name="comment"/><br/>
+			</fieldset>
+
+			<input type="submit" id="btnSubmit" value="Submit"/>
+			<input type="reset" id="btnReset" value="Clear Form"/>
+		</form>
+		
+	</body>
+
+</html>
