@@ -46,3 +46,7 @@ border : 5px dotted green;
 	background-color: rgb(0, 102, 255);
 	background-origin: content-box;
 }
+
+#CheckInfo, #Buttons {
+	background-color:grey;
+}

@@ -4,12 +4,53 @@
 		<meta charset="utf-8"/>
 		<title>Star Trek - Comments & Suggestions Page</title>
 		<link rel="stylesheet" type="text/css" href="StyleSheet.css" media="all" />
+		
+		 <script type="text/javascript">
+        function getCheckInfo() {
+            var userName;
+			
+			var checkGender;
+			
+			var checkAddress1;
+			var checkAddress2;
+			var checkAddress3;
+			var checkAddressMobile;
+			var checkAddressHome;
+			
+			var checkComment;
+			
+			userName = document.getElementById("uname");
+			
+			checkGender = document.getElementById("gender").value;
+			document.getElementById("checkGender").innerHTML = x;
+			
+			
+			checkAddress1 = document.getElementById("add1").value;
+			checkAddress2 = document.getElementById("add2").value;
+			checkAddress3 = document.getElementById("add3").value;
+			checkAddressMobile = document.getElementById("mphone").value;
+			checkAddressHome = document.getElementById("hphone").value;
+			
+	
+			checkComment = document.getElementById("comment").value;
+
+			var outputInfo = document.createElement("p");
+			outputInfo.id="outputInfo";
+			outputInfo.textContent= "Thank you for you comment " + userName.value +
+			"! Please confirm your comments below before they are submitted." + checkGender + ", " + checkAddress1 + ", " + checkAddress2 +
+			", " + checkAddress3 + ", " + checkAddressMobile + ", " + checkAddressHome + ", " + checkComment;
+			
+			var displayInfo = document.getElementById("CheckInfo");
+			displayInfo.appendChild(outputInfo);
+
+        }  
+    </script>
 	</head>
 
 <body>
 	<article>
 		<h1>Welcome to the Comments and Suggestions Page!</h1>
-		<h2>Please filling the information and comment or suggestion in the box</h2>
+		<h2>Please fill in the information and comment or suggestion in the box</h2>
 		<form method="Post" action="process.aspx">
 
 			<fieldset>
@@ -17,24 +58,44 @@
 			<input type="text" id="uname" name="uname"/><br/>
 			</fieldset>
 
+				</br>
 			<fieldset>
 			<label for="gender">Gender:</label><br/>
 			<input type="radio" name="gender" value="Male">Male</input><br/>
 			<input type="radio" name="gender" value="Female">Female</input><br/>
 			</fieldset>
-
+			
+				</br>
 			<fieldset>
+				<legend>Home Address:</legend>
+				<label for="add1">House Number & Street:</label><br/>
+				<input type="text" id="add1"/><br/>
 				<label for="add2">City:</label><br/>
-				<input type="text" id="city" name="city"/><br/>
+				<input type="text" id="add2"/><br/>
+				<label for="add3">Post Code:</label><br/>
+				<input type="text" id="add3"/><br/>
+                <label for="mphone">Mobile Phone No:</label><br/>
+				<input type="text" id="mphone" name="phone"/><br/>
+                <label for="hphone">Home Phone No:</label><br/>
+				<input type="text" id="hphone" name="phone"/><br/>
 			</fieldset>
 
+				</br>
 			<fieldset>
-				<label for="add2">Comment or Suggestion:</label><br/>
+				<label for="comment">Comment or Suggestion:</label><br/>
 				<input type="text" id="comment" name="comment"/><br/>
 			</fieldset>
-
+			
+			<h2>Make sure to check your entered information before submitting!</h2>
+		<div id="CheckInfo">
+        <input id="btnCheckInfo" type="button" value="Check your information!" onclick="getCheckInfo();" />
+		</br>
+    </div>
+			</br>
+			<div id="Buttons">
 			<input type="submit" id="btnSubmit" value="Submit"/>
 			<input type="reset" id="btnReset" value="Clear Form"/>
+			</div>
 		</form>
 	</article>
 
