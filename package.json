@@ -1,0 +1,22 @@
+{
+  "name": "startrek)",
+  "version": "1.0.0",
+  "description": "Star Trek Practice Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Light---/StarTrekWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Light---/StarTrekWebsite/issues"
+  },
+  "homepage": "https://github.com/Light---/StarTrekWebsite#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
