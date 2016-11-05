@@ -22,7 +22,6 @@ app.get('/comments', function (req, res) {
   res.json(comments);
 });
 
-
 // Listen on Port Number and IP Address
 app.listen(3000, function () {
 	console.log("Server running at LocalHost");
