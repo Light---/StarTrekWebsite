@@ -1,0 +1,29 @@
+h1 {
+	color: rgb(255, 204, 0);
+	text-transform : uppercase;
+	text-shadow: 2px 2px 0 black;
+}
+
+p::first-letter {
+ 	font-size: 200%;
+ 	color: #8A2BE2;
+}
+
+
+h1, h2, h3, h4{
+	font-weight : bold;
+
+}
+
+body {
+	background-color: #4da6ff;
+	font-family: Arial, Candara, Verdana, sans-serif;
+	word-spacing: 0.5rem;
+}
+
+.box {
+   width: 350px;
+   height: 150px;
+   padding: 10px;
+   border: 10px solid #000000;
+ }
